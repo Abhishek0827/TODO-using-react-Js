@@ -1,0 +1,88 @@
+.inputSection{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.inputSection input{
+ border: none;
+  width: 90%;
+  margin: auto;
+  height: 30px;
+  text-align: center;
+  outline: none;
+}
+.inputSection button{
+width: 170px;
+margin: auto ;
+height: 30px;
+background-color: transparent;
+background-image: url("assets/pencil.png");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+color: white;
+font-size: large;
+}
+
+.listArea li{
+  margin: auto;
+  padding: 15px 0 0 0;
+  list-style: none;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+  color: white;
+
+}
+.listArea span:first-child{
+  border-bottom: 1px solid rgba(38, 37, 37, 0.225);
+  width: 60%;
+}
+.listArea span{
+  display: flex;
+  gap: 10px;
+}
+.listArea button{
+  height: 30px;
+  padding: 0 15px;
+font-weight: bold;
+
+}
+
+#mark{
+  background-color: yellow;
+  text-decoration: line-through rgb(255, 0, 0);
+}
+#delete{
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background: linear-gradient(
+    to right,
+    rgb(255, 96, 122) 0%,
+    pink 50%,
+    paleturquoise 50%,
+    paleturquoise 100%
+  );
+}
+
+@media screen and (max-width:700px) {
+  .listArea li{
+    flex-direction: column;
+    gap: 5px;
+  }
+  .listArea span:first-child{
+    width: 100%;
+    justify-content: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.662);
+  }
+  .listArea span:last-child{
+    width: 100%;
+    justify-content: center;
+  }
+  #delete{
+    border-radius: 0;
+
+  }
+}
